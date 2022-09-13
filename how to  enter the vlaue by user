@@ -1,6 +1,6 @@
 --Scanner are used only one time every program--
 
-import java.util.Scanner;
+1--import java.util.Scanner;
 
 public class B{
     public static void main(String[] args){
@@ -14,7 +14,7 @@ public class B{
 output
 Welcome back harsh   only half name write
 
-import java.util.Scanner;
+2--import java.util.Scanner;
 
 public class B{
     public static void main(String[] args){
@@ -27,4 +27,25 @@ public class B{
 
 output
 Welcome back harsh sharma
+
+
+3--import java.util.Scanner;
+public class A{
+    public static void main(String[] args){
+        System.out.println(" Enter the name ");
+        Scanner sc=new Scanner(System.in);
+        String name = sc.nextLine();
+        System.out.println(" welcome back "+name);
+        
+        System.out.println(" Enter the age ");
+        int age = sc.nextInt();
+        System.out.println(" your age is "+age);
+    }
+}
+
+output
+
+welcome back harsh sharma
+ Enter the age 28
+ your age is 28
 
