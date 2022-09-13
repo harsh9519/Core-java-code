@@ -1,0 +1,8 @@
+
+class HelloWorld {
+    public static void main(String[] args) {
+        var a = "10";
+        var b = 23;
+        System.out.println(a+b);
+     }
+}
