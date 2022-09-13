@@ -1,4 +1,35 @@
+datatype in java are -
+1. primitive datatype (int,float,double,long,boolean, char)
+2. non primitive datatype (string,oject)
+
+--println and print use?
+println are used to break the message
+print are used to run message on single line
+
+ex - system.out.println("this is ram")
+     system.out.println("this is krishan")    output (this is ram)
+                                                     (this is krishan)
+     print single are used output         (this is ramthis is krishan) 
+     
+     public static void main(String[] args) { 
+     --static are used to initialize the method void main
+     
+     
+
 integer program?
+the integer are stored only 9 digits.
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 24;
+        int c = a+b;
+        System.out.println(c);
+     }
+}
+
+long program?
+long are used to store more than (integer) 9 digits value.
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -23,6 +54,7 @@ class HelloWorld {
 }
 
 program of double in java?
+double are use to store large float value.
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -44,3 +76,46 @@ class HelloWorld {
         System.out.println(+c);
      }
 }
+
+boolean program?
+the are used to store true or false.
+
+class HelloWorld {
+    public static void main(String[] args) {
+        d = 34>23;
+        system.out.println(d);
+    }
+}  
+
+Object program? o is capital
+they are used to store all type of datatype.Object are heterogenius nature.
+
+class HelloWorld {
+    public static void main(String[] args) {
+    
+    Obj data = "ravi";
+    Obj data2 = 1234;
+    system.out.println(data+"--"+data2);
+    
+    
+    machine are store every single quote character in no form
+    
+    -almost every integer are a character
+    -every character are a integer
+    
+    ;;character convert in integer value with ASCII rule 
+    
+    int sign2 = 'a';
+    system.ou.println(sign2);
+    
+    '@' = 64
+    'a'= 65
+    '1' = 49
+    '2' = 50
+    '+' = 43
+    ;;integer converted into character with ASCII rule
+    
+    char sign1 = 64;
+    system.out.println(sign1);
+    
+    
