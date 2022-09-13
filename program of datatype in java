@@ -1,0 +1,46 @@
+integer program?
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 24;
+        int c = a+b;
+        System.out.println(c);
+     }
+}
+
+
+program of float?
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        float a = 10.24f;
+        float b = 24.37f;
+        float c = a+b;
+        System.out.println(c);
+     }
+}
+
+program of double in java?
+
+class HelloWorld {
+    public static void main(String[] args) {
+        double a = 10.24;
+        double b = 24.37;
+        double c = a+b;
+        System.out.println(c);
+     }
+}
+
+
+program of variable?
+
+class HelloWorld {
+    public static void main(String[] args) {
+        var a = 10;
+        var b = 24;
+        var c = a+b;
+        System.out.println(+c);
+     }
+}
