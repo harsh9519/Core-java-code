@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    
+    void User_Details()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println(" Enter the name ");
+        String name = sc.nextLine();
+        System.out.println("Enter the mobile no ");
+        int no = sc.nextInt();
+        System.out.println("your name are " +name);
+        System.out.println("your no are " +no);
+        
+    }
+    
+    
+    static void Check_Elligiblity(int age)
+    {
+        if (age>=20)
+        {
+            System.out.println("you are elligible");
+        }
+        else
+        {
+            System.out.println("you are not elligible"); 
+        }    
+    }
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your age");
+        int age=sc.nextInt();
+        
+        Check_Elligiblity(age);
+        
+        System.out.println("Enter the age 2");
+        int age2=sc.nextInt();
+        
+        Check_Elligiblity(age2);
+        
+        HelloWorld o=new HelloWorld();
+        o.User_Details();
