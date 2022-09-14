@@ -1,0 +1,25 @@
+class D {
+    int a = 0;
+    int b = 1;
+    int c = 0;
+    
+    void fibb()
+    {
+        if (c<=10)
+        {
+        c = a+b;
+        System.out.println(c);
+        a = b;
+        b = c;
+        fibb();
+        }
+    }
+    public static void main(String[] args){
+        
+        D o=new D();
+        o.fibb();
+        
+        
+    }
+    
+}
