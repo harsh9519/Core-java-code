@@ -1,0 +1,43 @@
+
+
+class D {
+    
+    D()  ///this is depend on object when object is created the costructor crea
+    {           //this is called default constructor
+       System.out.println("this is called constructor"); 
+    }
+    
+    D(String name, int age)  /// this is called parameter constructor
+    {
+        System.out.println(" your name & age is "+name+ "&" +age);
+    }
+    
+    
+    {                            ///// this is also used object to create
+        System.out.println("this is called initilisation block");
+    }
+    
+    static
+    {
+        System.out.println("this is static block");
+    }
+    
+    void Method()
+    {
+        System.out.println("this is a method");
+    }
+    
+    static void static_method()
+    {
+        System.out.println("this is a static method block");
+    }
+    
+
+    public static void main(String[] args) {
+        
+        D o=new D();
+        o.Method();
+        D o1=new D("harsh",21);
+
+    }
+}
