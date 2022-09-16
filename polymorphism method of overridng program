@@ -1,0 +1,39 @@
+//program of polymorphism (overriding) program
+//In this overriding they have identical methods in different classes
+class B {
+    
+    void l()
+    {
+        System.out.println("parent");
+    }
+    void P(int i,String name)
+    {
+        System.out.println("name is"+name+"\n"+"number is"+i);
+    }
+
+}
+
+class C extends B {
+C()
+{
+    //super.l(); // this case the uper void l() print parent
+    //at only one super is used at a time
+    super.P(23,"sharmaji");
+}
+
+    void l()
+    { 
+        //super.l();// this case both print parents and child
+        System.out.println("child");
+    }
+    void P(int i,String name)
+    {
+        System.out.println("name is"+name+"\n"+"number is"+i);
+    }
+
+    public static void main(String[] args) {
+        
+        C o=new C();
+        //o.l();
+        o.P(12,"harsh sharma");
+        
