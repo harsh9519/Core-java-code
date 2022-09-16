@@ -4,6 +4,7 @@ class D {
     
     D()  ///this is depend on object when object is created the costructor crea
     {           //this is called default constructor
+               //super(): this is invisible line are call the constructor in series A,B,C classes
        System.out.println("this is called constructor"); 
     }
     
