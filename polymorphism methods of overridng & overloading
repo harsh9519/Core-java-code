@@ -32,6 +32,45 @@ C()
     }
 
     public static void main(String[] args) {
+    
+    
+  2)  //program of polymorphism (overloading) program
+//In this overriding they have identical methods but parameter are different classes
+class A {
+    
+    void l()
+    {
+        System.out.println("A is called");
+    }
+
+}
+
+class B extends A {
+
+
+    void l(int i)
+    {
+        System.out.println("B is called " +i);
+    }
+}
+
+class D extends B{
+    void l(String name)
+    {
+        System.out.println("l is called"+name);
+    }
+
+
+
+    public static void main(String[] args) {
+        
+        D o=new D();
+        o.l();
+        o.l(34);
+        o.l("harsh");
+        
+    }
+}
         
         C o=new C();
         //o.l();
