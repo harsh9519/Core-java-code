@@ -1,0 +1,26 @@
+
+
+class A {
+    
+    int i = 90;
+
+}
+
+class B extends A {
+    
+    int i= 67;
+
+
+    void l()
+    {
+        System.out.println(super.i); //uper value to this
+        System.out.println(this.i); //by default this contain
+    }
+
+
+    public static void main(String[] args) {
+        
+        B o=new B();
+        o.l();
+        
+    }
