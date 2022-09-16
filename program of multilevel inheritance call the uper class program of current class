@@ -1,0 +1,40 @@
+program of multilevel inheritance call the uper class program of current class? with the help of super() 
+
+class A {
+A()
+{
+    
+}
+    void l()
+    {
+        System.out.println("a is a class");
+    }
+}
+
+class B extends A {
+ B()
+ {
+     super.l(); //they are used to call parent class like as uper class void(l) 
+ }
+    void l()
+    {
+        System.out.println("b is a class");
+    }
+}
+
+class C extends B{
+C()
+{
+    
+}
+    void l()
+    {
+        System.out.println("c is a class");
+    }
+    public static void main(String[] args) {
+        
+        C o=new C();
+        o.l();
+        
+    }
+}
