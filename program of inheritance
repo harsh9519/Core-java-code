@@ -1,0 +1,28 @@
+progra of inheritance are used to attach one class inherit to another class  
+
+used class A extends B {
+ 
+class A{
+    
+    void sum()
+    {
+        int i = 90;
+        float f = 23.44f;
+        System.out.println("sum" +i+f);
+    }
+}    
+class G extends A {
+    
+    void sub()
+    {
+        int i = 10;
+        double d = 23.43d;
+        System.out.println("sub" +i+d);
+    }
+    public static void main(String[] args) {
+
+        G o=new G();
+        o.sum();
+        o.sub();
+    }
+}
