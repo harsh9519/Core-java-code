@@ -32,6 +32,11 @@ C()
     }
 
     public static void main(String[] args) {
+            C o=new C();
+        //o.l();
+        o.P(12,"harsh sharma");
+    }
+}    
     
     
   2)  //program of polymorphism (overloading) program
@@ -71,8 +76,13 @@ class D extends B{
         
     }
 }
-        
-        C o=new C();
-        //o.l();
-        o.P(12,"harsh sharma");
+
+output
+
+A is called
+B is called 34
+l is calledharsh
+
+
+           
         
