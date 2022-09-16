@@ -26,3 +26,36 @@ class G extends A {
         o.sub();
     }
 }
+
+
+program of inheritance 2 parametric constructor and constructor?
+
+
+class A{
+    
+    A()
+    {
+
+        //this(90); another method for call
+        System.out.println("this is constructor");
+    }
+    
+    A(int age)
+    {
+         System.out.println("age is" +age);
+    }         
+}    
+class G extends A {
+    
+    G()
+    {
+        super(90);  // but the parameter and constructor both are not call at a time this reason (A constructor is not call)  
+        // super are hidden in constructor this are call class method in series
+        System.out.println("this is b constructor");
+    }
+    public static void main(String[] args) {
+
+        G o=new G();
+
+    }
+}
