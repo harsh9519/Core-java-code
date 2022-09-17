@@ -38,3 +38,69 @@ class A entends B{
     }    
             
 }
+
+
+2) ex of access modifier encapsulation?
+
+
+//access modifier
+//Backend program
+
+
+class B {
+    int b=90;
+    void l()
+    {
+        System.out.println("l is cslled");
+    }
+
+    public int c=89;
+    public void p()
+    {
+        System.out.println("p is called");
+    }
+    protected int d = 56;
+    protected void q()
+    {
+        System.out.println("protected is called");
+    }
+    private int e = 56;
+    private void r()
+    {
+        System.out.println("r is called");
+}   } 
+        
+
+
+//latest
+// backend is a pakage
+import Backend.B;
+class A entends B{
+
+    public static void main(String[] args) {
+        
+        A o=new A();
+        System.out.println(o.b);
+        o.l();
+        
+        System.out.println(o.c);
+        o.p();
+        
+        System.out.println(o.d);
+        o.q();
+        
+        System.out.println(o.e);
+        o.r();
+        
+    }    
+            
+}
+output
+b=90
+l is cslled
+c=89
+p is called
+d = 56
+protected is called
+e = 56
+r is called
