@@ -1,1 +1,40 @@
 //Encapsulation are used to connect two module. old project and new project combination are called encapsulation.
+
+
+//Backend project old project
+
+
+class B {
+    int total=0;
+    public int series()
+    {
+        for (int i = 1;i<=10;i++)
+        {
+            System.out.println(i);
+            total+=i;
+        }
+    
+        return total;
+    }
+    
+}    
+        
+
+//attach backend to new project
+//latest
+// backend is a pakage
+
+import Backend.B;
+class A entends B{
+    void Sum()
+    {
+      int i = series();
+      System.out.println();
+    }
+    public static void main(String[] args) {
+        
+        A o=new A();
+        o.Sum();
+    }    
+            
+}
