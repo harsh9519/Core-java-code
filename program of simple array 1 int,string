@@ -2,6 +2,7 @@ package array;
 
 public class A {
 	int[] i = {12,34,56,76,78};
+	String[] name = {"ram","sham","sita"};
 	void get_Array()
 	{
 		System.out.println(i[0]);
@@ -18,6 +19,10 @@ public class A {
 			sum+=(i[j]);
 		}
 		System.out.println("sum is"+sum);
+		for (int j = 0;j<name.length;j++)
+		{
+			System.out.println(name[j]);
+		}
 	}
 	
 
@@ -25,6 +30,7 @@ public class A {
 		
 		new A().get_Array();
 		new A().total();
+		
 		
 output
 12
@@ -34,6 +40,8 @@ output
 76
 78
 sum is256
-
+ram
+sham
+sita
 
 		
