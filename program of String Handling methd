@@ -1,0 +1,59 @@
+string handling method are used to perform various operation with help of string
+
+package wrapperclass;
+
+public class B {
+	Object[] o = {"harsh","sharma","pandat",'4',23,333333};
+	void read()
+	{
+		for(int i=0;i<o.length;i++)
+		{
+		
+			System.out.println(o[i]);
+		}	
+	}
+	void String_Handling()
+	{
+		String str = "harsh sharma";
+		String str2 = new String("pandat");
+    //(string methods)
+		System.out.println(str.charAt(3));
+		System.out.println(str.length());
+		System.out.println(str.concat(" "+str2));
+		System.out.println(str.endsWith("pandat"));
+		System.out.println(str.startsWith("harsh"));
+		System.out.println(str.equalsIgnoreCase(str2));
+		System.out.println(str.isEmpty());
+		long mobile_no = 897653566; //int convert into string
+		System.out.println(String.valueOf(mobile_no).length());
+		String age = "89"; //string convert in integer
+		System.out.println(Integer.parseInt(age)+1);
+		System.out.println(str.contains("sha"));
+		System.out.println(str.replace("sharma", "pandat"));
+		
+		
+		
+	}
+	
+		
+	public static void main(String[] args) {
+		
+		//new B().read();
+		new B().String_Handling();
+		// TODO Auto-generated method stub
+
+	}
+  
+  output
+  
+ s
+12
+harsh sharma pandat
+false
+true
+false
+false
+9
+90
+true
+harsh pandat
