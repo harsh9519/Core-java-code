@@ -1,0 +1,22 @@
+package array;
+
+public class A {
+	int[] i = {12,34,56,76,78};
+	void get_Array()
+	{
+		System.out.println(i[0]);
+		for(int j = 0;j<i.length;j++)
+		{
+			System.out.println(i[j]);
+		}
+	}
+	
+
+	public static void main(String[] args) {
+		
+		new A().get_Array();
+		// TODO Auto-generated method stub
+
+	}
+
+}
