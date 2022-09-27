@@ -10,13 +10,30 @@ public class A {
 			System.out.println(i[j]);
 		}
 	}
+	void total()
+	{
+		int sum = 0;
+		for (int j=0;j<i.length;j++)
+		{
+			sum+=(i[j]);
+		}
+		System.out.println("sum is"+sum);
+	}
 	
 
 	public static void main(String[] args) {
 		
 		new A().get_Array();
-		// TODO Auto-generated method stub
+		new A().total();
+		
+output
+12
+12
+34
+56
+76
+78
+sum is256
 
-	}
 
-}
+		
