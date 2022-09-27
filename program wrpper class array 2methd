@@ -1,0 +1,32 @@
+wrapper class are used to store various types of variables int ,string,duble,float
+
+package wrapperclass;
+
+public class B {
+	Object[] o = {"harsh","sharma","pandat",'4',23,333333};
+	void read()
+	{
+		for(int i=0;i<o.length;i++)
+		{
+		
+			System.out.println(o[i]);
+		}	
+	}
+	
+		
+	public static void main(String[] args) {
+		
+		new B().read();
+		// TODO Auto-generated method stub
+
+	}
+
+}
+output
+
+harsh
+sharma
+pandat
+4
+23
+333333
