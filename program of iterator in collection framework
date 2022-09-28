@@ -1,0 +1,30 @@
+//collection framework are used to store ore collect unlimited values all types int,string,float unlimited times
+//iteartor are used to read the data only Not the blank space they help to work fast read large data 
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+public class A {
+	
+	void Read()
+	{
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(23);
+		al.add(34);
+		al.add(24);
+		//iteartor are used to read the data only Not the blank space
+		Iterator itr=al.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
+
+	}
+
+	public static void main(String[] args) {
+		new A().Read();
+		// TODO Auto-generated method stub
+
+	}
+
+}
