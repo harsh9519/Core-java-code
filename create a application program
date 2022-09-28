@@ -1,0 +1,87 @@
+//front end code
+
+package application;
+
+public class Data {
+	
+	String name;
+	int roll;
+	float marks;
+	
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public int getRoll() {
+		return roll;
+	}
+
+
+	public void setRoll(int roll) {
+		this.roll = roll;
+	}
+
+
+	public float getMarks() {
+		return marks;
+	}
+
+
+	public void setMarks(float marks) {
+		this.marks = marks;
+	}
+
+
+}
+
+
+
+//backend work code
+
+
+package application;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//collection framework
+		
+		ArrayList<Data> al=new ArrayList<Data>();
+		
+		for (int i=1;i<=3;i++)
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("please enter the name roll and marks");
+			String name = sc.nextLine();
+			int roll=sc.nextInt();
+			float marks=sc.nextFloat();
+			
+			Data o=new Data();
+			o.setName(name);
+			o.setRoll(roll);
+			o.setMarks(marks);
+			
+			al.add(o);
+			
+			
+		}
+		
+		for(Data o:al)
+		{
+			System.out.println(o);
+			System.out.println(o.getName());
+			System.out.println(o.getRoll());
+			System.out.println(o.getName());
+		}
+	}
+}	
+
