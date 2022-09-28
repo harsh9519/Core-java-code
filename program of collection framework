@@ -1,0 +1,56 @@
+collection framework are used to store ore collect unlimited values all types int,string,float unlimited times
+
+import java.util.ArrayList;
+public class A {
+	
+
+	public static void main(String[] args) {
+		
+		ArrayList al=new ArrayList();
+		al.add(23);
+		al.add("string");
+		al.add('A');
+		al.add(2,"harsh sharma");
+		al.remove(0); //to remove 23
+		al.clear(); //all clear to used
+		
+		for(int i=0;i<al.size();i++)
+		{
+			System.out.println(al.get(i));
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+2) only store integer value
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+public class A {
+	
+	void ArrayList()
+	{
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(23);
+		al.add(34);
+		al.add(24);
+		al.add(90);
+		//Collections.sort(al); this is used to sorting
+		Collections.shuffle(al); // this is used to shuffle
+		System.out.println(al);
+	}
+	
+
+	public static void main(String[] args) {
+		new A().ArrayList();
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+
