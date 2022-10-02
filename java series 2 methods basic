@@ -1,0 +1,19 @@
+class A{   //class is a container that store all data members in java. it is a prototype declaration  of logic.
+
+  public static void main(String[] args);{  //main is method are work through JVM . JVM are used to read and convert into binary code. 
+      System.out.println("welcome harsh");  // println means print statement print line
+      System.err.println("welcome harsh"); // err is error are used to write statement in red colour
+      
+      var a = 78;   integer 4byte 32bit 9digit range 2^32-1 to 2^32   
+      var b = 80;     var means variable
+      System.out.println(a+b);
+      System.out.println((float)a/b));   //full decimal form used 'type casting'   //non-decimal number result non-decimal by default so used typecating convert decimal form
+      System.out.println(a-b);
+      var check = 29<23?"A":"B";  boolean type  1BIT  
+      System.out.println(check);
+      var check2 = "A";  1 char = 2byte
+      System.out.println((int)check2);  conver ASCII (American standard coding information interchange) // UTF (unicode tranmission formatter)= it is used to make emojies
+      var num = 22344543354344565454535; long range 2^62-1 to 2^62  8byte  aprox 19digit
+      var num2 = 23>34;
+      System.out.println(num2+" "+28); concat "" double quotes
+      var p = 23455+""; no convert into string
