@@ -1,4 +1,4 @@
-for each method are used to print the all data in array. they are used on only object
+for each method are used to print the all data in array. they are used on only object 
 
 int[] num = {'harsh',1234566,'A'};
 System.out.println(num.getClass().getName());
@@ -14,6 +14,7 @@ harsh
 1234566
 A
 
+2) this method used as getter setter and constructor both
 front
 
 public class Data<T>{
