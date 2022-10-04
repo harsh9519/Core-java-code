@@ -63,10 +63,47 @@ public class D{
         }while(i>=1);
 
     }
+    
     public static void main(String[] args){
         
     D o=new D();
     o.Thirdloop();
     }
 }    
+
+//recursion method loop
+
+package loop;
+
+public class A {
+	//recursion
+	static void series()
+	{
+		System.out.println("sharma ji");
+		series();
+	}
+	public static void main(String[] args) {
+    }
+} 
+
+recursion modify
+
+
+public class A {
+	//recursion
+	static int c = 1;
+	static void series()
+	{
+		if(c<=7)
+		{
+			System.out.println("sharma ji");
+			c++;
+			series();
+		}		
+	}
+	public static void main(String[] args) {
+    }
+}    
+
+    
     
