@@ -1,0 +1,49 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+public class A {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println(20>23);
+		System.out.println('?'>100);
+		int a = 23,b = 34,c = 78;
+		System.out.println(a>b?(a>c?a:c):(b>c?b:c));
+		
+		if (23>34)
+		{
+			System.out.println("23 is greater");
+		}
+		else
+		{
+			System.out.println("34 is greater");
+			
+		}
+		System.out.println("please Enter num");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int num = Integer.parseInt(br.readLine()); // this is another method of input this is used as a exception case
+		
+		switch (num) //this switch is used to run many statement easily 
+		{
+		case 1: 
+			System.out.println("mon");
+		
+			break;  // break are used to run only one case without break run all case
+		case 2:
+			System.out.println("Tue");
+			break;
+		default:
+			System.out.println("invalid");
+		}
+		
+	}	
+  
+  output
+  
+  false
+false
+78
+34 is greater
+please Enter num
+2
+Tue
