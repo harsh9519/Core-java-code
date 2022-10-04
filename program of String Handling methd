@@ -33,6 +33,7 @@ public class B {
 		
 		
 		
+		
 	}
 	
 		
@@ -57,3 +58,13 @@ false
 90
 true
 harsh pandat
+
+
+2) string convert into mutable state
+
+StringBuilder sb = new StringBuilder("harsh");  // stringnuilder performance fast  another method is stringBuffer - this is used in threading support
+	System.out.println(sb);
+	sb.append("sharma");
+	System.out.println(sb);
+	System.out.println(sb.toString().toUpperCase());
+	System.out.println(sb.toString().split("")[1]);
