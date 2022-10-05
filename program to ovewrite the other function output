@@ -1,0 +1,49 @@
+class A front
+
+
+public class A {
+	
+	A()
+	{
+		System.out.println("a is constructor");
+		
+	}
+	void name()
+	{
+		System.out.println("l is called");
+	}
+
+}
+
+class B overwrite output backend
+
+
+public class B {
+
+	public static void main(String[] args) {
+		
+		A o=new A()
+				{
+		
+				void name()
+				{
+					System.out.println("ram is called");
+				}
+		};
+		o.name();         // overite inheritance of name value
+				
+
+
+	}
+
+} 
+
+output
+
+a is constructor 
+ram is called   //except l is called//
+
+
+
+
+
