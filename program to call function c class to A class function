@@ -1,0 +1,68 @@
+//class A method
+
+package oops;
+
+public class A extends B {
+	
+	A()
+	{
+		super(new A());
+		System.out.println("A is called");
+	}
+	
+	void check2()
+	{
+		System.out.println("check2 is called");
+		Check();
+	}
+	
+	public static void main(String[] args) {
+		
+		A o=new A();;
+		o.check2();
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+
+		// TODO Auto-generated method stub
+		
+}
+
+
+//class B methods
+
+package oops;
+
+public class B extends C {
+	
+	B(A o)
+	{
+		super(o);
+		System.out.println("B is called");
+	}	
+}
+
+//class C methods
+
+package oops;
+
+public class C {
+A o;	
+		C(A o)
+		{
+			this.o=o;
+			System.out.println("C is called");
+			
+		}
+		void Check()
+		{
+			System.out.println("check is called");
+			o.check2();
+		}
+
+	
+
+}
