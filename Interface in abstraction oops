@@ -51,3 +51,10 @@ public class A implements B,C { //implements is used to inherit multiple interfa
 		// TODO Auto-generated method stub
 		
 	}
+	
+output
+
+23
+Static check
+p is called from B
+call is called
