@@ -1,0 +1,53 @@
+
+interface B{
+	//variable(Static,public,final)
+	//default functions,
+	// static function (Static,public)
+	//abstract function(public)
+	//object is not allowed
+	int a = 23;
+	default void call() { //in this object created
+		System.out.println("call is called");
+	}
+	static void check() {
+		System.out.println("Static check");
+		
+	}
+	void p();
+}
+interface C{
+	
+	static void V()
+	{
+		System.out.println("p");
+	}
+}
+public class A implements B,C { //implements is used to inherit multiple interface
+
+	public static void main(String[] args) {
+		
+		System.out.println(B.a);
+		B.check();
+		
+		A o = new A();
+		o.p();
+		o.call();
+		o.V();
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+	private void V() {
+	// TODO Auto-generated method stub
+	
+}
+
+	@Override
+	public void p() {
+		System.out.println("p is called from B");
+		// TODO Auto-generated method stub
+		
+	}
