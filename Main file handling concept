@@ -1,0 +1,78 @@
+----------write the file
+
+
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+
+public class C {
+	
+
+	void write()
+	{
+		File f = new File("C:\\Users\\my pc\\Desktop\\data.txt");
+		try
+		{
+		FileOutputStream fout = new FileOutputStream(f);
+		BufferedOutputStream bout = new BufferedOutputStream(fout);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("please enter your message");
+		String message = br.readLine();
+		byte[] msg = message.getBytes();
+		bout.write(msg);
+		bout.flush();
+		bout.close();
+		fout.close();
+		}
+		catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		C o = new C();
+		o.write();
+    
+-------read the file
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+
+public class B {
+	
+	void Read()
+	{
+		File f = new File("C:\\Users\\my pc\\Desktop\\data.txt");
+		try
+		{
+		
+			FileInputStream fin = new FileInputStream(f);
+			BufferedInputStream bin = new BufferedInputStream(fin);
+			byte[] d = bin.readAllBytes();
+			for(byte d0:d)
+			{
+				System.out.print((char)d0);
+			}
+			bin.close();
+			fin.close();
+
+		}
+		catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		
+		B o = new B();
+		o.Read();
+		// TODO Auto-generated method stub
+
+	}
+
+}
