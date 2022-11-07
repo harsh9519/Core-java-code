@@ -1,0 +1,70 @@
+======temp method ue
+
+package palindrome;
+
+public class D {
+
+	public static void main(String[] args) {
+		
+		int num = 121;
+		int a = num;
+		String temp ="";
+		
+		while(num>=1)
+		{
+		
+		   	int b = num%10;
+			num = num/10;
+			temp+=b;
+		}
+		
+		if (temp.equals(a+""))
+		{
+			System.out.println("palindrome");
+		}
+		else
+		{
+			System.out.println("mot palinfrome");
+		}
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+--------without
+
+package palindrome2;
+
+public class F {
+
+	public static void main(String[] args) {
+		
+		int num = 123;
+		int a = num;
+		int sum = 0;
+		
+		while(num>=1)
+		{
+			int b = num%10;
+			num = num/10;
+			
+			sum = sum*10+b;
+		}
+		
+		System.out.println(sum);
+		
+		if (sum==a)
+		{
+			System.out.println("palindrome");
+		}
+		else
+		{
+			System.out.println("not palindrome");
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}
