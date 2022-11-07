@@ -1,0 +1,35 @@
+
+public class A {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {23,34,45,66,77,43,56,78,43,75,32};
+		int max = 0;
+		
+		for(int arr0:arr)
+		{
+			if(max<arr0)
+			{
+				max = arr0;
+			}
+		}
+		
+		System.out.println(max);
+		
+		
+		
+		int min = max;
+		
+		for(int arr0:arr)
+		{
+			if (min>arr0)
+			{
+				min = arr0;
+			}
+		}
+		System.out.println(min);
+		// TODO Auto-generated method stub
+
+	}
+
+}
